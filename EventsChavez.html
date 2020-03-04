@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+	<title>
+	9-Berchmans 2019-2020
+	</title>
+	<link rel="stylesheet" type="text/css" href="cssChavez.css">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+body {
+	background-image: url(lowpoly.png);
+	background-repeat: repeat;
+}
+</style>
+</head>
+<body>
+	<div class="header" style="background-image: url(Backdrop.jpg);">
+	  <h1><img src="LogoChavez.png" alt="Logo"></h1>
+	</div>
+<div class="topnav">
+  <a href="HomeChavez.html">Home</a>
+	<a href="EventsChavez.html" class="active">Events</a>
+  <a href="DirectoryChavez.html">Directory</a>
+  <a href="AboutChavez.html">About</a>
+</div>
+<!-- this is for photos, please do not mess with the attributes, except for alt, thats the description-->
+<div class="photo">
+  <div class="photo column">
+    <img src="yoon.jpg" alt="This is a picture of Arthur's glasses" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="photo column">
+    <img src="Aral.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class=" photo column">
+    <img src="arsee.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="photo column">
+    <img src="tree.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+  </div>
+	<div class="photo column">
+    <img src="Wizr.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+  </div>
+	<div class="photo column">
+		<img src="yoon.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+	</div>
+	<div class="photo column">
+		<img src="1.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+	</div>
+	<div class="photo column">
+		<img src="1.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+	</div>
+	<div class="photo column">
+		<img src="FT.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+	</div>
+	<div class="photo column">
+		<img src="1.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+	</div>
+</div>
+<div class="space">
+  <span onclick="this.parentElement.style.display='none'" class="close">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+<!-- This code is so spaggheti-->
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+</body>
+</html>
